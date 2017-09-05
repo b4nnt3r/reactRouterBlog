@@ -1,5 +1,4 @@
-import React, {Component} from 'react';
-import {NavLink,Link} from 'react-router-dom';
+import React, { Component } from 'react';
 
 class CreatePost extends Component {
   constructor(props){
@@ -31,7 +30,7 @@ class CreatePost extends Component {
   }
   handleSubmit(e){
     e.preventDefault()
-    let listItem =JSON.stringify(this.state)
+    let listItem = JSON.stringify(this.state)
     fetch("https://tiny-lasagna-server.herokuapp.com/collections/blogger/", {
       method: 'POST',
       body: listItem,
