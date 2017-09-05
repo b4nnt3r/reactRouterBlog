@@ -16,16 +16,16 @@ class CreatePost extends Component {
 
   handleNameChange(e){
     this.setState(
-      {name:e.target.value })
+      { name: e.target.value })
   }
   handleTitleChange(e){
     this.setState(
-      {title:e.target.value}
+      { title: e.target.value }
     )
   }
   handleBlogChange(e){
     this.setState(
-      {blog:e.target.value}
+      { blog: e.target.value }
     )
   }
   handleSubmit(e){
@@ -68,7 +68,7 @@ class CreatePost extends Component {
         <button type="submit" redirect="/">Submit Post</button>
         </form>
         <div>
-          <a href="/">Back to Homepage</a>
+          <a href="/">Homepage</a>
         </div>
       </div>
     )
