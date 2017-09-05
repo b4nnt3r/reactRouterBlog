@@ -62,7 +62,7 @@ class CreatePost extends Component {
             <input onChange={this.handleTitleChange} value={this.state.title}  type="text" className="form-title"  placeholder="Title" />
           </div>
           <div className="form-group">
-            <label>Write your blog...</label>
+            <label>Blog:</label>
             <textarea onChange={this.handleBlogChange} value={this.state.blog} type="text" className="form-blog" rows="5"  placeholder="What's on your mind?" />
           </div>
         <button type="submit" redirect="/">Submit Post</button>
